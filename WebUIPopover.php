@@ -25,7 +25,7 @@ use yii\web\JsExpression;
  *     'label' => 'Button popup',
  *     'tagName' => 'button',
  *     'tagOptions' => [
- *         'class' => 'btn btn-success btn-block',
+ *         'class' => 'btn btn-success',
  *     ],
  *     'pluginOptions' => [
  *         'placement' => 'right',

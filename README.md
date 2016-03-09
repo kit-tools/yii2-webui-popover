@@ -41,7 +41,7 @@ WebUIPopover::begin([
     'label' => 'Button popup',
     'tagName' => 'button',
     'tagOptions' => [
-        'class' => 'btn btn-success btn-block',
+        'class' => 'btn btn-success',
     ],
     'pluginOptions' => [
         'placement' => 'right',
@@ -56,4 +56,4 @@ echo 'Content popup';
 WebUIPopover::end();
 ```
 
-Checkout the [documentation](https://github.com/sandywalker/webui-popover) for further information.
+Checkout the [documentation](https://github.com/sandywalker/webui-popover#default-options) for further information.
