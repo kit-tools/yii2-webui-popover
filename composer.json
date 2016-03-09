@@ -23,18 +23,12 @@
         "yiisoft/yii2": "~2.0.0",
         "bower-asset/webui-popover": "*"
     },
-    "require-dev": {
-        "phpunit/phpunit": "4.*"
-    },
     "autoload": {
         "psr-4": {
             "kittools\\webuipopover\\": ""
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        },
         "asset-installer-paths": {
             "bower-asset-library": "vendor/bower"
         }
