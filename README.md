@@ -32,7 +32,10 @@ use kittools\webuipopover\WebUIPopover;
 echo WebUIPopover::widget([
     'label' => 'Button popup',
     'tagName' => 'button',
-    'body' => 'Content popup'
+    'body' => 'Content popup',
+    'options' => [
+        'class' => 'myCssClass'
+    ]
 ]);
 ```
 The following example will show the content enclosed between the begin() and end() calls within the popover box:
