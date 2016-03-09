@@ -18,10 +18,7 @@ use yii\web\JsExpression;
  * echo WebUIPopover::widget([
  *     'label' => 'Button popup',
  *     'tagName' => 'a',
- *     'body' => 'Content popup',
- *     'options' => [
- *         'class' => 'myCssClass'
- *     ]
+ *     'body' => 'Content popup'
  * ]);
  *
  * WebUIPopover::begin([
@@ -136,8 +133,7 @@ class WebUIPopover extends \yii\base\Widget
      */
     protected function renderBodyBegin()
     {
-        $class = empty($this->options['class']) ? '' : ' ' . $this->options['class'];
-        echo Html::beginTag('div', ['class' => 'webui-popover-content' . $class]) . "\n";
+        echo Html::beginTag('div', ['class' => 'webui-popover-content']) . "\n";
     }
 
     /**
@@ -160,7 +156,7 @@ class WebUIPopover extends \yii\base\Widget
 
         $id = $this->options['id'];
         if (!empty($this->pluginOptions)) {
-            foreach ($this->pluginOptions as $option => $value) {
+            foreach($this->pluginOptions as $option => $value){
                 if (in_array($option, ['onShow', 'onHide'])) {
                     $this->pluginOptions[$option] = new JsExpression($value);
                 }
