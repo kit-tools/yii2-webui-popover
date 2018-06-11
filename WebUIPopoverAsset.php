@@ -18,7 +18,7 @@ use yii\web\AssetBundle;
 
 class WebUIPopoverAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/bower/webui-popover/dist/';
+    public $sourcePath = '@bower/webui-popover/dist/';
 
     public $js = [
         'jquery.webui-popover.js'
